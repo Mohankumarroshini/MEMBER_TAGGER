@@ -17,7 +17,7 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("** I am member Tagger **, I can Tag almost all members in group or channel 🤓\nClick **/help** for more infomation.\n\n Here is my [Developer👨‍💻](https://t.me/My_Dear_Lightbright)",
+  await event.reply("** I am Mention RoBot **, I can Tag almost all members in group or channel 🤓\nClick **/help** for more infomation.\n\n Here is my [Developer👨‍💻](https://t.me/My_Dear_Lightbright)",
                     buttons=(
                       [Button.url('Sᴜᴘᴘᴏʀᴛ🦸', 'https://t.me/Mastro_Support')]
                     ),
@@ -25,7 +25,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Hey 🤓 I Am Member Tagger \n\n You can Tag members by using Commands shown below,\n\n /all text \n\n @all text \n\n #all text**"
+  helptext = "**Hey 🤓 I Am Mention RoBot \n\n You can Tag members by using Commands shown below,\n\n /all text \n\n @all text \n\n #all text**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url(' Uᴘᴅᴀᴛᴇs🧞', 'https://t.me/Mastro_Updates')]
